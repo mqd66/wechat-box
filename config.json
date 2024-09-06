@@ -37,7 +37,7 @@
   "use_linkai": false,
   "linkai_api_key": "",
   "linkai_app_code": "",
-  "xunfei_app_id": "",
-  "xunfei_api_secret": "",
-  "xunfei_api_key": ""
+  "xunfei_app_id": "111111111111111111111111",
+  "xunfei_api_secret": "111111111111111",
+  "xunfei_api_key": "11111111111111111"
 }
