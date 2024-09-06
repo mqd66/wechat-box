@@ -178,28 +178,6 @@ sudo docker compose up -d
 sudo docker logs -f chatgpt-on-wechat
 ```
 
-**(3) 插件使用**
-
-如果需要在docker容器中修改插件配置，可通过挂载的方式完成，将 [插件配置文件](https://github.com/zhayujie/chatgpt-on-wechat/blob/master/plugins/config.json.template)
-重命名为 `config.json`，放置于 `docker-compose.yml` 相同目录下，并在 `docker-compose.yml` 中的 `chatgpt-on-wechat` 部分下添加 `volumes` 映射:
-
-```
-volumes:
-  - ./config.json:/app/plugins/config.json
-```
-
-### 4. Railway部署
-
-> Railway 每月提供5刀和最多500小时的免费额度。 (07.11更新: 目前大部分账号已无法免费部署)
-
-1. 进入 [Railway](https://railway.app/template/qApznZ?referralCode=RC3znh)
-2. 点击 `Deploy Now` 按钮。
-3. 设置环境变量来重载程序运行的参数，例如`open_ai_api_key`, `character_desc`。
-
-**一键部署:**
-  
-  [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/qApznZ?referralCode=RC3znh)
-
 <br>
 
 
